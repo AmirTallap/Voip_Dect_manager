@@ -1,0 +1,57 @@
+<html lang="en">
+<%- include("./partials/head.ejs") %>
+
+<body>
+  <%- include("./partials/nav.ejs") %>
+
+
+
+  <div class="container">
+    <div class="row  text-center">
+      <div class="col-12">
+        
+        <form action="/devices" method="POST">
+
+          <div class="row">
+            <div class="col-12">
+                <label for="title">Device title:</label>
+                <input class="form-control" type="text" id="title" name="title" required>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+                <label for="title">Room Number:</label>
+                <input class="form-control" type="text" id="room_number" name="room_number" required>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+                <label for="snippet">Device snippet:</label>
+                <input class="form-control" type="text" id="snippet" name="snippet" required>
+            </div>
+          </div>
+          
+         
+          <div class="row">
+            <div class="col-12">
+                <label for="device_url">Device IP Address</label>
+                <br>
+                <input class="form-control" type="text" id="ip_address" name="ip_address" required>
+                <br>
+            </div>
+          </div>
+
+          <div class="row mt-1">
+            <div class="col-12">
+              <button class="btn btn-primary">Add</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+
+  <%- include("./partials/footer.ejs") %>
+</body>
+</html>
